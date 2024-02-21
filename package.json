@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsx .",
     "dev": "tsx watch .",
-    "test": "npx autocannon -a 1000000 --renderStatusCodes http://localhost:3000"
+    "test": "npx autocannon -c 10 -d 5 --renderStatusCodes http://localhost:3000"
   },
   "keywords": [],
   "author": "",
