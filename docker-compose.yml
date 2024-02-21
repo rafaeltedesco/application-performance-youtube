@@ -12,3 +12,8 @@ services:
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./dbdata:/var/lib/mysql
+  redis:
+    container_name: redis
+    image: redis:6.2
+    ports:
+      - 6379:6379
