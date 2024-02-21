@@ -7,9 +7,4 @@ export default class GameRepository {
 
     return result;
   }
-
-  async getElementsCount() {
-    const [ [ { elements }] ] = await connection.query<RowDataPacket[] & number[]>('SELECT COUNT(*) as elements FROM games;');  
-    return elements;
-  }
 }

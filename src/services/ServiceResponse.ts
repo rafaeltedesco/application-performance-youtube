@@ -5,8 +5,8 @@ type ServicePaginatedResponse<T> = {
   data: T[],
   page: number,
   limit: number,
-  totalPages: number,
-  remainingPages: number,
+  totalPages?: number,
+  remainingPages?: number,
 }
 
 type ErrorMessage = {
