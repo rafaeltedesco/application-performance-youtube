@@ -1,2 +1,4 @@
 node_modules
 dbdata
+populate-cache/dist
+populate-cache/node_modules
