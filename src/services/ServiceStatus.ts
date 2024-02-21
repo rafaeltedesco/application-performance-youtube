@@ -1,3 +1,4 @@
 export enum ServiceStatus {
-  OK = 'OK'
+  OK = 'OK',
+  NOT_FOUND = 'NOT_FOUND'
 }
