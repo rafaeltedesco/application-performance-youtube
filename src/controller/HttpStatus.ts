@@ -1,4 +1,3 @@
-export const HttpStatus = {
-  OK: 200,
-  NOT_FOUND: 404,
+export enum HttpStatus {
+  OK = 200,
 }

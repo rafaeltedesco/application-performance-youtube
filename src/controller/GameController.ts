@@ -7,7 +7,7 @@ export default class GameController {
 
   async get(req: Request, res: Response) {
     const { page = '1', limit = '10' } = req.query;
-    const { status, ...rest } = await this.gameService.getPaginated(+page, +limit);
-    return res.status(HttpStatus[status]).json(rest);
+    const { status, data } = await this.gameService.getPaginated(+page, +limit);
+    return res.status(HttpStatus[status]).json(data);
   }
 }
